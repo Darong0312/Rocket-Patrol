@@ -38,7 +38,7 @@ class Menu extends Phaser.Scene {
       }
         // show menu text
         this.add.text(game.config.width/2, game.config.height/2 - borderUISize - borderPadding, 'Plague of the Dragon', menuTextConfig).setOrigin(0.5);
-        this.add.text(game.config.width/2, game.config.height/2 + borderUISize + borderPadding, 'P1: Use Key A D to move & (W) to fire', menuTextConfig).setOrigin(0.5);
+        this.add.text(game.config.width/2, game.config.height/2 + borderUISize + borderPadding, 'P1: Use Key A D to move & W to fire', menuTextConfig).setOrigin(0.5);
         this.add.text(game.config.width/2, game.config.height/2, 'P2: Use ←→ arrows to move & (↑) to fire', menuTextConfig).setOrigin(0.5);
         menuConfig.backgroundColor = '#00FF00';
         menuConfig.color = '#000';
