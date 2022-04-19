@@ -49,7 +49,7 @@ class Menu extends Phaser.Scene {
         keyRIGHT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
     }
 
-    update() {
+    update(){ 
         if (Phaser.Input.Keyboard.JustDown(keyLEFT)) {
           // Novice mode
           game.settings = {
@@ -63,7 +63,7 @@ class Menu extends Phaser.Scene {
           // Expert mode
           game.settings = {
             spaceshipSpeed: 4,
-            gameTimer: 45000    
+            gameTimer: 15000    
           }
           this.sound.play('sfx_select');
           this.scene.start("playScene");    
