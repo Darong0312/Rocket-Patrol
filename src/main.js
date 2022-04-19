@@ -15,7 +15,7 @@ let borderUISize = game.config.height / 15;
 let borderPadding = borderUISize / 3;
 
 // reserve keyboard variables
-let keyOne, keyR, keyLEFT, keyRIGHT, keyA, keyD, keyJ;
+let keyUP, keyR, keyLEFT, keyRIGHT, keyA, keyD, keyW;
 
 /*
 Create new artwork for all of the in-game assets (rocket, spaceships, explosion) (20) : Rocket->Arrow, Spaceships->dragons, explosion->new

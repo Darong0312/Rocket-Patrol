@@ -41,11 +41,11 @@ class Play extends Phaser.Scene {
 
         keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);         // p1 move
         keyD = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);         // p1 move
-        keyJ = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.J);         // p1 fire
+        keyW = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);         // p1 fire
 
         keyLEFT = this.input.keyboard.addKey(37);   // p2 move left arrow
         keyRIGHT = this.input.keyboard.addKey(39); // p2 move right arrow
-        keyOne = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.NUMPAD_ONE);    // p2 fire
+        keyUP = this.input.keyboard.addKey(38);    // p2 fire
 
         // animation config
         this.anims.create({
