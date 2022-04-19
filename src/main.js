@@ -27,6 +27,10 @@ Implement a simultaneous two-player mode (30)
 Total: 100
 
 Citation:
-Jiatao Xu, from SJSU, he helps me with the artwork.
+Jiatao Xu, from SJSU, he helps me with the artworks.
 Calex Raffield, same class, he helps me to implement a new timer
+
+Sources:
+explosion sound by kutejnikov (https://freesound.org/people/kutejnikov/sounds/522209/)
+bow sound by Erdie (https://freesound.org/people/Erdie/sounds/65733/)
 */

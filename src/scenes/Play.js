@@ -6,6 +6,7 @@ class Play extends Phaser.Scene {
     preload() {
         // load images/tile sprites
         this.load.image('rocket', './assets/rocket.png');
+        this.load.image('rocket2', './assets/rocket2.png');
         this.load.image('spaceship', './assets/spaceship.png');
         this.load.image('starfield', './assets/starfield.png');
         this.load.image('dragon_purple', './assets/dragon_purple.png');
@@ -18,7 +19,7 @@ class Play extends Phaser.Scene {
         this.starfield = this.add.tileSprite(0, 0, 640, 480, 'starfield').setOrigin(0, 0);
 
         // green UI background
-        this.add.rectangle(0, borderUISize + borderPadding, game.config.width, borderUISize * 2, 0x00FF00).setOrigin(0, 0);
+        this.add.rectangle(0, borderUISize + borderPadding, game.config.width, borderUISize * 2, 0x4DC3FF).setOrigin(0, 0);
         // white borders
         this.add.rectangle(0, 0, game.config.width, borderUISize, 0xFFFFFF).setOrigin(0 ,0);
         this.add.rectangle(0, game.config.height - borderUISize, game.config.width, borderUISize, 0xFFFFFF).setOrigin(0 ,0);
@@ -28,7 +29,7 @@ class Play extends Phaser.Scene {
         // add Rocket (p1)
         this.p1Rocket = new Rocket1(this, game.config.width/2, game.config.height - borderUISize - borderPadding, 'rocket').setOrigin(0.5, 0);
         // add Rocket (p2)
-        this.p2Rocket = new Rocket2(this, game.config.width/2, game.config.height - borderUISize - borderPadding, 'rocket').setOrigin(0.5, 0);
+        this.p2Rocket = new Rocket2(this, game.config.width/2, game.config.height - borderUISize - borderPadding, 'rocket2').setOrigin(0.5, 0);
 
         // add Spaceships (x3)
         this.ship01 = new SpaceshipS(this, game.config.width + borderUISize*6, borderUISize*4, 'dragon_purple', 0, 50).setOrigin(0, 0);
@@ -62,7 +63,7 @@ class Play extends Phaser.Scene {
             fontFamily: 'Courier',
             fontSize: '28px',
             backgroundColor: '#F3B141',
-            color: '#843605',
+            color: '#996239',
             align: 'right',
             padding: {
                 top: 5,
@@ -92,7 +93,7 @@ class Play extends Phaser.Scene {
         function decreaseTime(){
             this.currentTime -= 1000;
         }
-
+        this.speedUp = game.settings.gameTimer - 30000;
     }
 
     update() {
